@@ -46,7 +46,6 @@ namespace SimpleNetworkBFS.Wrapper
 
             //Generate and populate the GraphAdjList object
             GraphAdjList graph = new GraphAdjList(Data.UniqueListOfNodes.Count());
-            Matrix matrix = new Matrix(Data.UniqueListOfNodes.Count, Data.UniqueListOfNodes.Count(), 0.0);
             for (int i = 0; i < Data.IndexI.Count; i++)
             {
                 graph.AddEdge(Data.IndexI[i], Data.IndexJ[i]);
