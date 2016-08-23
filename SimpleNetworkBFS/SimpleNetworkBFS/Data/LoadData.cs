@@ -56,8 +56,8 @@ namespace SimpleNetworkBFS.Data
         public bool getUserToEnterFileDetails()
         {
             Console.WriteLine("Enter file (i.e. C:\\SocialNetwork.txt): ");
-            //string fname = Console.ReadLine();
-            string fname = "D:\\JC Masters\\UTRC Problem\\SocialNetwork.txt";
+            string fname = Console.ReadLine();
+            //string fname = "D:\\JC Masters\\UTRC Problem\\SocialNetwork.txt";
 
             this.TextFileLocation = fname;
 
