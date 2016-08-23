@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using SimpleNetworkBFS.Structures;
+using SimpleNetworkBFS.Wrapper;
+using SimpleNetworkBFS.Algorithms;
+using System.IO;
+
+namespace SimpleNetworkBFS.Data
+{
+    public class LoadData
+    {
+        private List<String> originalData = new List<string>();
+
+        public List<String> OriginalData
+        {
+            get { return originalData; }
+            set { originalData = value; }
+        }
+
+        private string textFileLocation;
+
+        public string TextFileLocation
+        {
+            get { return textFileLocation; }
+            set { textFileLocation = value; }
+        }
+
+        public bool load(string file)
+        {
+            try
+            {
+                StreamReader sr = new StreamReader(file);
+
+                string tmp = "";
+                do
+                {
+                    tmp = sr.ReadLine();
+                    OriginalData.Add(tmp);
+                }
+                while (tmp != null);
+
+                sr.Close();
+                return true;
+            }
+
+            catch
+            {
+                Console.WriteLine("\nLoading error. See LoadData.cs, load().");
+                return false;
+            }
+
+        }
+
+        public bool getUserToEnterFileDetails()
+        {
+            Console.WriteLine("Enter file (i.e. C:\\SocialNetwork.txt): ");
+            //string fname = Console.ReadLine();
+            string fname = "D:\\JC Masters\\UTRC Problem\\SocialNetwork.txt";
+
+            this.TextFileLocation = fname;
+
+            bool fileExists = checkFileExists(this.TextFileLocation);
+
+            if (fileExists)
+                return true;
+
+            return false;
+        }
+
+        public bool checkFileExists(string file)
+        {
+            FileInfo f = new FileInfo(file);
+            if (f.Exists)
+                return true;
+            return false;
+        }
+
+    }
+}

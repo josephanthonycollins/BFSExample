@@ -1,0 +1,4 @@
+C:\Users\Katie\Desktop\UTRCbfs\BFSExample\SimpleNetworkBFS\SimpleNetworkBFS\bin\Debug\SimpleNetworkBFS.exe
+C:\Users\Katie\Desktop\UTRCbfs\BFSExample\SimpleNetworkBFS\SimpleNetworkBFS\bin\Debug\SimpleNetworkBFS.pdb
+C:\Users\Katie\Desktop\UTRCbfs\BFSExample\SimpleNetworkBFS\SimpleNetworkBFS\obj\x86\Debug\SimpleNetworkBFS.exe
+C:\Users\Katie\Desktop\UTRCbfs\BFSExample\SimpleNetworkBFS\SimpleNetworkBFS\obj\x86\Debug\SimpleNetworkBFS.pdb
